@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volumetric Calculator</title>
-    <!-- Link to the manifest file -->
-    <link rel="manifest" href="/volumetric-calculator
-/manifest.json">
-    <!-- Add meta tags for better PWA support -->
     <meta name="theme-color" content="#4CAF50">
     <meta name="description" content="A simple volumetric calculator for calculating weights based on dimensions and mode.">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Volumetric Calculator</title>
+    <link rel="manifest" href="/volumetric-calculator/manifest.json">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -240,7 +237,7 @@
         // Register the service worker for PWA functionality
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('/volumetric-calculator/sw.js')
                     .then(registration => {
                         console.log('Service Worker registered with scope:', registration.scope);
                     })

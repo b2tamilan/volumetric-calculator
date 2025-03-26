@@ -3,9 +3,9 @@ const CACHE_NAME = 'volumetric-calculator-v1';
 
 // Files to cache
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/manifest.json'
+    '/volumetric-calculator/',
+    '/volumetric-calculator/index.html',
+    '/volumetric-calculator/manifest.json'
 ];
 
 // Install the service worker and cache the files
